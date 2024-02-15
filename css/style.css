@@ -1,7 +1,7 @@
 /* Start Variables */
-:root {
+/* :root {
 
-}
+} */
 /* End Variables */
 /* Start Global Rules */
 * {
@@ -43,6 +43,9 @@ body {
 ul {
     list-style: none;
 }
+:focus{
+    outline: none;
+}
 
 .container {
     padding-left: 15px;
@@ -72,3 +75,42 @@ ul {
     }
 }
 /* end  */
+
+body > .container{
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.todo-delete-all{
+    width: 100%;
+}
+form{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+input[type="text"]{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+input[type=checkbox]{
+    margin-left: 10px;
+    cursor: pointer;
+}
+button{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #46d65c;
+    color: white;
+}
